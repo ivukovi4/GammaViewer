@@ -49,25 +49,31 @@
         </Menu>
         <Canvas Name="grif" Canvas.Left="0" Canvas.Top="20" Height="184" Width="1320">
             <Image Name="grif_texture" Height="184" Width="1320" Source="/GammaViewer;component/Images/wood.gif" Stretch="Fill" />
-            <Line Name="_line1" Stroke="Silver" StrokeThickness="1" X1="0" Y1="15" X2="{Binding ElementName=grif, Path=ActualWidth}" Y2="{Binding ElementName=_line1, Path=Y1}"/>
-            <Line Name="_line2" Stroke="Silver" StrokeThickness="1" X1="0" Y1="45" X2="{Binding ElementName=grif, Path=ActualWidth}" Y2="{Binding ElementName=_line2, Path=Y1}"/>
-            <Line Name="_line3" Stroke="Silver" StrokeThickness="1" X1="0" Y1="75" X2="{Binding ElementName=grif, Path=ActualWidth}" Y2="{Binding ElementName=_line3, Path=Y1}"/>
-            <Line Name="_line4" Stroke="Silver" StrokeThickness="1" X1="0" Y1="105" X2="{Binding ElementName=grif, Path=ActualWidth}" Y2="{Binding ElementName=_line4, Path=Y1}"/>
-            <Line Name="_line5" Stroke="Silver" StrokeThickness="1" X1="0" Y1="135" X2="{Binding ElementName=grif, Path=ActualWidth}" Y2="{Binding ElementName=_line5, Path=Y1}"/>
-            <Line Name="_line6" Stroke="Silver" StrokeThickness="1" X1="0" Y1="165" X2="{Binding ElementName=grif, Path=ActualWidth}" Y2="{Binding ElementName=_line6, Path=Y1}"/>
-            <Line Name="_tab0" Stroke="Silver" StrokeThickness="2" X1="10" Y1="1" X2="{Binding ElementName=_tab0, Path=X1}" Y2="181"/>
-            <Line Name="_tab1" Stroke="Silver" StrokeThickness="1" X1="110" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab1, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
-            <Line Name="_tab2" Stroke="Silver" StrokeThickness="1" X1="210" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab2, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
-            <Line Name="_tab3" Stroke="Silver" StrokeThickness="1" X1="310" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab3, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
-            <Line Name="_tab4" Stroke="Silver" StrokeThickness="1" X1="410" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab4, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
-            <Line Name="_tab5" Stroke="Silver" StrokeThickness="1" X1="510" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab5, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
-            <Line Name="_tab6" Stroke="Silver" StrokeThickness="1" X1="610" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab6, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
-            <Line Name="_tab7" Stroke="Silver" StrokeThickness="1" X1="710" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab7, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
-            <Line Name="_tab8" Stroke="Silver" StrokeThickness="1" X1="810" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab8, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
-            <Line Name="_tab9" Stroke="Silver" StrokeThickness="1" X1="910" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab9, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
-            <Line Name="_tab10" Stroke="Silver" StrokeThickness="1" X1="1010" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab10, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
-            <Line Name="_tab11" Stroke="Silver" StrokeThickness="1" X1="1110" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab11, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
-            <Line Name="_tab12" Stroke="Silver" StrokeThickness="1" X1="1210" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab12, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
+            <Line Name="_line1" Stroke="Silver" StrokeThickness="1" X1="15" Y1="15" X2="{Binding ElementName=grif, Path=ActualWidth}" Y2="{Binding ElementName=_line1, Path=Y1}"/>
+            <Label Canvas.Top="2" Canvas.Left="-2" Foreground="Silver" FontWeight="Bold" FontFamily="Arial" FontSize="14">E</Label>
+            <Line Name="_line2" Stroke="Silver" StrokeThickness="1" X1="15" Y1="45" X2="{Binding ElementName=grif, Path=ActualWidth}" Y2="{Binding ElementName=_line2, Path=Y1}"/>
+            <Label Canvas.Top="32" Canvas.Left="-2"  Foreground="Silver" FontWeight="Bold" FontFamily="Arial" FontSize="14">B</Label>
+            <Line Name="_line3" Stroke="Silver" StrokeThickness="1" X1="15" Y1="75" X2="{Binding ElementName=grif, Path=ActualWidth}" Y2="{Binding ElementName=_line3, Path=Y1}"/>
+            <Label Canvas.Top="62" Canvas.Left="-2"  Foreground="Silver" FontWeight="Bold" FontFamily="Arial" FontSize="14">G</Label>
+            <Line Name="_line4" Stroke="Silver" StrokeThickness="1" X1="15" Y1="105" X2="{Binding ElementName=grif, Path=ActualWidth}" Y2="{Binding ElementName=_line4, Path=Y1}"/>
+            <Label Canvas.Top="92" Canvas.Left="-2"  Foreground="Silver" FontWeight="Bold" FontFamily="Arial" FontSize="14">D</Label>
+            <Line Name="_line5" Stroke="Silver" StrokeThickness="1" X1="15" Y1="135" X2="{Binding ElementName=grif, Path=ActualWidth}" Y2="{Binding ElementName=_line5, Path=Y1}"/>
+            <Label Canvas.Top="122" Canvas.Left="-2"  Foreground="Silver" FontWeight="Bold" FontFamily="Arial" FontSize="14">A</Label>
+            <Line Name="_line6" Stroke="Silver" StrokeThickness="1" X1="15" Y1="165" X2="{Binding ElementName=grif, Path=ActualWidth}" Y2="{Binding ElementName=_line6, Path=Y1}"/>
+            <Label Canvas.Top="152" Canvas.Left="-2"  Foreground="Silver" FontWeight="Bold" FontFamily="Arial" FontSize="14">E</Label>
+            <Line Name="_tab0" Stroke="Silver" StrokeThickness="2" X1="20" Y1="1" X2="{Binding ElementName=_tab0, Path=X1}" Y2="181"/>
+            <Line Name="_tab1" Stroke="Silver" StrokeThickness="1" X1="120" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab1, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
+            <Line Name="_tab2" Stroke="Silver" StrokeThickness="1" X1="220" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab2, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
+            <Line Name="_tab3" Stroke="Silver" StrokeThickness="1" X1="320" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab3, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
+            <Line Name="_tab4" Stroke="Silver" StrokeThickness="1" X1="420" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab4, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
+            <Line Name="_tab5" Stroke="Silver" StrokeThickness="1" X1="520" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab5, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
+            <Line Name="_tab6" Stroke="Silver" StrokeThickness="1" X1="620" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab6, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
+            <Line Name="_tab7" Stroke="Silver" StrokeThickness="1" X1="720" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab7, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
+            <Line Name="_tab8" Stroke="Silver" StrokeThickness="1" X1="820" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab8, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
+            <Line Name="_tab9" Stroke="Silver" StrokeThickness="1" X1="920" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab9, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
+            <Line Name="_tab10" Stroke="Silver" StrokeThickness="1" X1="1020" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab10, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
+            <Line Name="_tab11" Stroke="Silver" StrokeThickness="1" X1="1120" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab11, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
+            <Line Name="_tab12" Stroke="Silver" StrokeThickness="1" X1="1220" Y1="{Binding ElementName=_tab0, Path=Y1}" X2="{Binding ElementName=_tab12, Path=X1}" Y2="{Binding ElementName=_tab0, Path=Y2}"/>
         </Canvas>
     </Canvas>
 </Window>
