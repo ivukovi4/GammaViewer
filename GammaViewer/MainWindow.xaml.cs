@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using System.Linq;
 using System.Windows;
 using System.Windows.Shapes;
@@ -97,7 +98,10 @@ namespace GammaViewer
 
         private void About()
         {
-            MessageBox.Show(this, string.Format("© 2011 ivukovi4.{0}All rights reserved. ^_^", Environment.NewLine), "Gamma viewer", MessageBoxButton.OK, MessageBoxImage.Information);
+            var assembly = Assembly.GetExecutingAssembly();
+            var copyright = Attribute.GetCustomAttribute(assembly, typeof(AssemblyCopyrightAttribute)) as AssemblyCopyrightAttribute;
+            var title = Attribute.GetCustomAttribute(assembly, typeof(AssemblyTitleAttribute)) as AssemblyTitleAttribute;
+            MessageBox.Show(this, string.Format("{0}", copyright.Copyright), title.Title, MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         private void New()
