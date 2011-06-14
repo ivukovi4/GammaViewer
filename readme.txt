@@ -1,1 +1,1 @@
-Простая программка для просмотра и редактирования гамм.
+Simple program for view and edit gammas.
